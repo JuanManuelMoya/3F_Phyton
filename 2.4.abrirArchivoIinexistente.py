@@ -13,5 +13,6 @@ def abrirCrearArchivo():
       print(f" El archivo '{nombreArchivo}' ha sido creado.\n")
     except Exception as e:
       print(f" Error al crear el archivo \n'{nombreArchivo}': {e}") #error de creacion de archivo
+    finally nombreArchivo.close() 
       
 abrirCrearArchivo()
